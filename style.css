@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr;
+    grid-template-areas: 
+    "img content"
+    "img form"
+    "img content3";
+}
+
+.img{
+    display: flex;
+    grid-area: img;
+    filter: opacity(0.9);
+    background-image: url(./images/depositphotos_31426097-stock-photo-technology-background.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img{
+    height: 80%;
+}
+
+.odin{
+   display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+   align-items: center; 
+   filter: opacity(0.8);
+   height: 390px;
+}
+
+.odin p{
+    color: white;
+    font-size: 70px;
+    margin-left: 25px;
+}
+
+.header-content{
+   grid-area: content;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    font-size: 30px;
+    padding: 1em;
+}
+
+.header{
+   width: 50vw;
+   margin: 10vw 5vw 5vw 45px;
+   
+}
+
+.form{
+    background-color: rgb(49, 49, 49);
+    grid-area: form;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+    color: white;
+}
+
+form{
+    
+    padding: 1em;
+    margin:10px 0 0 45px;
+}
+
+h1{
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: large;
+}
+
+.one{
+    display: flex;
+    gap: 75px;
+}
+
+input{
+    display: block;
+    border: rgb(145, 145, 145, 0.5) solid 2px;
+    height: 2rem;
+    margin: 0 80px 25px 0;
+    outline: medium none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus{
+    border: rgb(99, 94, 202) solid 2px;
+    opacity: 0.8;
+    
+}
+input:invalid:focus{
+    border: rgba(255, 1, 1, 0.5) solid 2px;
+}
+
+button{
+    
+    background-color: rgb(85, 153, 243);
+    padding: 15px;
+    width: 275px;
+    margin: 45px 0 40px 45px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 25px;
+    color: white;
+}
+
+button:hover{
+    background-color: #5158e8;
+}
+a:active, a:visited{
+    color: #6970ef;
+    color: rgb(85, 153, 243);
+}
+
+a:hover{
+    color: #6970ef;
+}
+
+.footer-content{
+    grid-area: content3;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    padding: 1em;
+}
+
+.log-in{
+    display: flex;
+}
+
+.footer-content a:link { 
+    text-decoration: none;
+    margin-left: 10px; 
+    color: white;
+}
+.footer-content .p{
+    margin-left: 45px;
+}
+

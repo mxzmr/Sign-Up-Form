@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    <title>Sign-Up</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="img">
+            <div class="odin">
+                <img src="./images/odin-lined.png">
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div class="header-content">
+            <p class="header">Join our community and help us change how people learn how to code. Sign up below!</p>
+        </div>
+        <div class="form">
+            <form id="form">
+                <h1 class="form-header">Lets Do This!</h1>
+                <div class="one">
+                    <label>
+                        <span>First Name</span>
+                        <input type="text" name="first-name" minlength="2" required>
+                    </label>
+                    <label>
+                        <span>Last Name</span>
+                        <input type="text" name="last-name">
+                    </label>
+                </div>
+                <div class="one">
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span>Phone Number</span>
+                    <input type="number">
+                </label>
+            </div>
+            <div class="one">
+                <label>
+                    <span>Password</span>
+                    <input type="password" id="password" name="password" required>
+                </label>
+                <label>
+                    <span>Confirm-Password</span>
+                    <input type="password" id="password2" name="password" required>
+                </label>
+            </div>
+        </form>
+    </div>
+        <div class="footer-content">
+            <button form="form" id="btn">Create Account</button>
+            <div class="log-in">
+                <p class="p">Already have an account?</p>
+                <p><a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
